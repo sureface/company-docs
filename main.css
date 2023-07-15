@@ -1,0 +1,228 @@
+@import url('qm-main-root-vars.css');
+@import url('font.css');
+
+body {
+    margin: 0;
+}
+
+.qm-docs__wrapper {
+    padding: 15px 25px;
+}
+.qm-docs__header {
+    color: var(--bs-secondary);
+    font-family: openSansBold;
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 110%;
+    text-transform: capitalize;
+    margin-bottom: 11px;
+}
+.qm-docs__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+.qm-docs__grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 14px;
+    row-gap: 15px;
+    margin-bottom: 29px;
+}
+.qm-docs {
+    border-radius: 3px;
+    background: #F9FFFF;
+    box-shadow: 0px 1px 3px 0px rgba(var(--bs-black-rgb), 0.25);
+    padding: 5px 8px;
+}
+.qm-doc__heading {
+    display: flex;
+    align-items: center;
+    color: var(--bs-secondary);
+    font-family: openSansBold;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 110%; 
+    text-transform: capitalize;
+    margin-bottom: 4px;
+}
+
+.qm-doc__heading img {
+    margin-left: 9px;
+}
+.qm-doc__head-title {
+    display: flex;
+    align-items: center;
+    color: var(--bs-gray-dark);
+    font-family: openSansSemiBold;
+    font-size: 0.625rem;
+    font-weight: 600;
+    line-height: 110%;
+    text-transform: capitalize;
+}
+.qm-doc__head-date {
+    font-size: 0.75rem;
+    color: #000;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+.qm-doc__head-status {
+    color: var(--bs-success);
+    font-family: openSansBold;
+    font-size: 0.75rem;
+    font-weight: 700;
+    line-height: 110%;
+    text-transform: capitalize;
+}
+.qm-doc__action-btn {
+    border-radius: 19px;
+    border: 1px solid var(--bs-secondary);
+    padding: 2px 10px;
+    color: var(--bs-secondary);
+    font-family: openSansSemiBold;
+    font-size: 0.75rem;
+    font-weight: 600;
+    line-height: 110%;
+    text-transform: capitalize;
+    cursor: pointer;
+    margin-left: 12px;
+}
+.qm-doc__body {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 12px;
+    align-items: center;
+}
+.qm-doc__file {
+    display: flex;
+    align-items: flex-end;
+}
+.qm-doc__file-item {
+    margin-left: 9px;
+}
+.qm-doc__file-title {
+    color: var(--bs-gray-dark);
+    font-family: openSansSemiBold;
+    font-size: 0.625rem;
+    font-weight: 600;
+    line-height: 110%;
+    text-transform: capitalize;
+}
+.qm-doc__file-name {
+    color: var(#000);
+    font-family: openSansSemiBold;
+    font-size: 0.75rem;
+    font-weight: 600;
+    line-height: 110%;
+    text-transform: capitalize;
+}
+.qm-doc__file-name--status {
+    color: var(--bs-gray-dark);
+    font-family: openSansSemiBold;
+    font-size: 0.75rem;
+    font-weight: 600;
+    line-height: 110%;
+    text-transform: capitalize;
+}
+.qm-doc__heading-subtitle {
+    color: var(--bs-secondary);
+    font-family: openSansSemiBold;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 110%;
+    text-transform: capitalize;
+    margin-left: 4px; 
+}
+.qm-doc__heading-period {
+    color:#FFF;
+    font-family: openSansSemiBold;
+    font-size: 0.625rem;
+    font-weight: 600;
+    line-height: 110%;
+    text-transform: capitalize;
+    border-radius: 3px;
+    background: #00969F;
+    padding: 2px 6px;
+    margin-left: 8px;
+}
+
+.qm-doc__head-title.qm-doc-active {
+    color: var(--bs-secondary);
+}
+.qm-doc__head-title.qm-doc-active .qm-doc__head-date{
+    color: var(--bs-secondary);
+}
+
+.qm-doc__massage-current {
+    display: block;
+}
+
+.qm-docs.qm-doc—disabled {
+    background-color: #FFF;
+}
+.qm-docs.qm-doc—disabled .qm-doc__heading {
+    color: var(--bs-gray-dark);
+}
+.qm-docs.qm-doc—disabled .qm-doc__massage-current {
+    display: none;
+}
+.qm-doc__massage-gray {
+    display: none;
+}
+.qm-docs.qm-doc—disabled .qm-doc__massage-gray {
+    display: block;
+}
+.qm-docs.qm-doc—disabled .qm-doc__heading-subtitle {
+    color: var(--bs-gray-dark);
+}
+.qm-docs.qm-doc—disabled .qm-doc__heading-period {
+    color: #FFF;
+    background-color: var(--bs-gray-dark);
+}
+.qm-docs.qm-doc—disabled .qm-doc__head-date {
+    display: none;
+}
+.qm-docs.qm-doc—disabled .qm-doc__head-status {
+    display: none;
+}
+.qm-doc__disabled {
+    display: none;
+    color: var(--bs-gray-light);
+    font-family: openSansSemiBold;
+    font-size: 0.625rem;
+    font-weight: 600;
+    line-height: 110%; 
+    text-transform: capitalize;
+    margin-left: 4px;
+}
+.qm-docs.qm-doc—disabled .qm-doc__disabled {
+    display: block;
+}
+.qm-docs.qm-doc—disabled .qm-doc__action-btn {
+    border-radius: 19px;
+    border: 1px solid var(--bs-gray-light);
+    color: var(--bs-gray-light);
+    background-color: #FFF;
+}
+.qm-doc__file-blue  {
+    display: block;
+}
+.qm-doc__file-gray {
+    display: none;
+}
+.qm-docs.qm-doc—disabled .qm-doc__file-blue  {
+    display: none;
+}
+.qm-docs.qm-doc—disabled .qm-doc__file-gray  {
+    display: block;
+}
+.qm-docs.qm-doc—disabled .qm-doc__file-name {
+    display: none;
+}
+.qm-docs.qm-doc—disabled .qm-doc__file-item .qm-doc__disabled {
+    margin-left: 0;
+}
+.qm-docs.qm-doc—disabled .qm-doc__date .qm-doc__disabled {
+    margin-left: 0;
+}
